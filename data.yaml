@@ -1,0 +1,13 @@
+train: /content/drive/MyDrive/Accident Detection model/data/train/images
+val: /content/drive/MyDrive/Accident Detection model/data/valid/images
+test: /content/drive/MyDrive/Accident Detection model/data/test/images
+
+nc: 1
+names: ['Accident']
+
+roboflow:
+  workspace: project
+  project: accident-detection-model
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/project/accident-detection-model/dataset/1
