@@ -29,6 +29,7 @@ Accident Detection Model is made using YOLOv8, Google Collab, Python, Roboflow, 
 - Finally we used the Yolo commands to train our model on the data set of train folder.
 
 ## Results
+- Accident detection demo.mp4 is Live accident detection on a video by this model 
 ![image](https://user-images.githubusercontent.com/78155393/233783477-bf31573d-2bd7-4e3c-bb06-dc1c151fb072.png)
 
 ## Way Forward
