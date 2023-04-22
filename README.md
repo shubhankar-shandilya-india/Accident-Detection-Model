@@ -6,7 +6,7 @@ Accident Detection Model is made using YOLOv8, Google Collab, Python, Roboflow, 
 - According to the Ministry of Road Transport and Highways, India witnessed around 4.5 lakh road accidents in 2019, which resulted in the deaths of more than 1.5 lakh people. 
 - The age range that is most severely hit by road accidents is 18 to 45 years old, which accounts for almost 67 percent of all accidental deaths.
 
-
+## Accidents survey 
 ![image](https://user-images.githubusercontent.com/78155393/233774342-287492bb-26c1-4acf-bc2c-9462e97a03ca.png)
 
 ## Literature Survey
