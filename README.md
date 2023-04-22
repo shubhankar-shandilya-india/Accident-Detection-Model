@@ -27,3 +27,10 @@ Accident Detection Model is made using YOLOv8, Google Collab, Python, Roboflow, 
 - Using Google Collab - Further We have used Google collab to code and train the model for time and space optimization.
 - Coding - We installed Yolov8 , connected our google drive account, created the data.yaml file containing classes and path for train, val, test images path.
 - Finally we used the Yolo commands to train our model on the data set of train folder.
+
+## Results
+![image](https://user-images.githubusercontent.com/78155393/233783477-bf31573d-2bd7-4e3c-bb06-dc1c151fb072.png)
+
+## Way Forward
+- This Model can be implemented in the cameras placed on highway Pol with the help of an iot device in camera it can be used to report to the nearest control room.
+- This model can also be transformed into an open source web application using Frameworks like Flask which can be used by anyone to cross check any image to know about if any accident occured in it.
