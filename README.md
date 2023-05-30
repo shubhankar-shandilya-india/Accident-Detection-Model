@@ -14,16 +14,16 @@ Accident Detection Model is made using YOLOv8, Google Collab, Python, Roboflow, 
 - Deeksha Gour Sep-2019, uses computer vision technology, neural networks, deep learning, and various approaches and algorithms to detect objects.
 
 ## Research Gap
-- Lack of real-world data - We trained model for more then 1200 images.
+- Lack of real-world data - We trained model for more then 3200 images.
 - Large interpretability time and space needed - Using google collab to reduce interpretability time and space required.
 - Outdated Versions of previous works - We aer using Latest version of Yolo v8.
 
 ## Proposed methodology
-- We are using Yolov8 to train our custom dataset which has been 1200+ images, collected from different platforms.
+- We are using Yolov8 to train our custom dataset which has been 3200+ images, collected from different platforms.
 - This model after training with 25 iterations and is ready to detect an accident with a significant probability.
 
 ## Model Set-up
-- Preparing Custom dataset - We have collected over 1200 images. We have annotated all of them individually on roboflow and then downloaded in yolov8 format.
+- Preparing Custom dataset - We have collected over 3200 images. We have annotated all of them individually on roboflow and then downloaded in yolov8 format.
 - Using Google Collab - Further We have used Google collab to code and train the model for time and space optimization.
 - Coding - We installed Yolov8 , connected our google drive account, created the data.yaml file containing classes and path for train, val, test images path.
 - Finally we used the Yolo commands to train our model on the data set of train folder.
