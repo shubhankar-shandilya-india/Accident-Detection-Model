@@ -23,10 +23,29 @@ Accident Detection Model is made using YOLOv8, Google Collab, Python, Roboflow, 
 - This model after training with 25 iterations and is ready to detect an accident with a significant probability.
 
 ## Model Set-up
-- Preparing Custom dataset - We have collected over 3200 images. We have annotated all of them individually on roboflow and then downloaded in yolov8 format.
-- Using Google Collab - Further We have used Google collab to code and train the model for time and space optimization.
-- Coding - We installed Yolov8 , connected our google drive account, created the data.yaml file containing classes and path for train, val, test images path.
-- Finally we used the Yolo commands to train our model on the data set of train folder.
+#### Preparing Custom dataset
+- We have collected 1200+ images from different sources like YouTube, Google images, Kaggle.com etc.
+- Then we annotated all of them individually on a tool called roboflow.
+- During Annotation we marked the images with no accident as NULL and we drew a box on the site of accident on the images having an accident
+- Then we divided the data set into train, val, test in the ratio of 8:1:1
+- At the final step we downloaded the dataset in yolov8 format.                                                                                    
+#### Using Google Collab
+- We are using google colaboratory to code this model because google  collab uses gpu which is faster than local environments.
+- You can use Jupyter notebooks, which let you blend code, text, and visualisations in a single document, to write and run Python code using Google Colab.
+- Users can run individual code cells in Jupyter Notebooks and quickly view the results, which is helpful for experimenting and debugging. Additionally, they enable the development of visualisations that make use of well-known frameworks like Matplotlib, Seaborn, and Plotly.
+- In Google collab, First of all we Changed runtime from TPU to GPU.      
+- We cross checked it by running command ‘!nvidia-smi’                                                                      
+#### Coding
+- First of all, We installed Yolov8 by the command ‘!pip install ultralytics==8.0.20’
+- Further we checked about Yolov8 by the command ‘from ultralytics import YOLO from IPython.display import display, Image’      
+- Then we connected and mounted our google drive account by the code ‘from google.colab import drive drive.mount('/content/drive')’
+- Then we ran our main command to run the training process ‘%cd /content/drive/MyDrive/Accident Detection model !yolo task=detect mode=train model=yolov8s.pt data= data.yaml epochs=1 imgsz=640 plots=True’
+- After the training we ran command to test and validate our model ‘!yolo task=detect mode=val model=runs/detect/train/weights/best.pt data=data.yaml’
+‘!yolo task=detect mode=predict model=runs/detect/train/weights/best.pt conf=0.25 source=data/test/images’
+- Further to get result from any video or image we ran this command ‘!yolo task=detect mode=predict model=runs/detect/train/weights/best.pt source="/content/drive/MyDrive/Accident-Detection-model/data/testing1.jpg/mp4"’     
+- The results are stored in the runs/detect/predict folder.                                            
+Hence our model is trained, validated and tested to be able to detect accidents on any video or image. 
+
 
 ## Challenges I ran into
 #### I majorly ran into 3 problems while making this model
