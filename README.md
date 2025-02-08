@@ -2,10 +2,7 @@
 
 Accident Detection Model is made using YOLOv8, Google Collab, Python, Roboflow, Deep Learning, OpenCV, Machine Learning, Artificial Intelligence.  It can detect an accident on any accident by live camera, image or video provided. This model is trained on a dataset of 3200+ images, These images were annotated on roboflow.
 
-
-https://github.com/user-attachments/assets/a2241937-b99b-4ce3-9917-8e04fb8443dc
-
-
+https://drive.google.com/file/d/1HLL6EdZndIr6R-TSz7L0CeG6t3Zcy2Jy/view?usp=sharing
 
 ## Problem Statement
 - Road accidents are a major problem in India, with thousands of people losing their lives and many more suffering serious injuries every year. 
